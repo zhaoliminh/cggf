@@ -1,0 +1,11 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+#include <assert.h>
+int main()
+{
+	const char* p1 = "abcdef";
+	const char* p2 = "abc";
+	int ret = strcmp(p1, p2);
+	int ret = strncmp(p1, p2, 3);
+	return 0;
+}
