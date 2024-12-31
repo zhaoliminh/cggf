@@ -1,0 +1,18 @@
+#include <stdio.h>
+void main()
+{
+	char c;
+	int a[10] = {0}, i = 0;
+	while ((c = getchar()) != '#')
+	{
+		if (c >= '0' && c <= '9')
+		{
+			a[c - '0']++;
+			i++;
+		}
+	}
+	for (i = 0; i < 10; i++)
+	{
+		printf("%d的个数为%d\n", i, a[i]);
+	}
+}
